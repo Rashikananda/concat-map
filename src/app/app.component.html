@@ -1,0 +1,10 @@
+<hello name="{{ name }}"></hello>
+<p>
+  Start editing to see some magic happen :)
+</p>
+<div  *ngFor="let contact of contacts | async" >
+ <!-- <div> {{(contact | async).x }} </div> -->
+  <div> {{contact }} </div>
+ <!-- <div> {{(contact | async).y }} </div>
+  <div> {{((contact | async).z) | async }} </div> -->
+</div>
